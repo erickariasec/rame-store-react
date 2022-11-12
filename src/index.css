@@ -1,13 +1,74 @@
+:root {
+    /* Text colors */
+    --white-color-text: #fff;
+    --black-color-text: #000;
+    --black-hover-color-text: #777;
+    /* Background colors */
+    --promo-header-background-color: #000;
+    --logo-content-background-color: rgba(255, 255, 255, 0.973);
+    /* Font families */
+    --roboto-font: "Roboto", sans-serif;
+    --mukta-font: "Mukta", sans-serif;
+    /* Separator colors */
+    --separator-color: gainsboro;
+}
+
+/* !-------------------------- SCROLLBAR --------------------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+/* !-------------------------- END SCROLLBAR -------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100vw;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; */
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }

@@ -1,46 +1,54 @@
 import { Card, Grid, Row, Text } from "@nextui-org/react";
+import HoddieBlack from "../hoddie-iti-black-red-no-shadows.png";
+import HoddieYellow from "../hoddie-iti-yellow-red.png";
+import CupBlack from "../cup-iti-black-red.png";
+import GapBlack from "../gap-iti-black-red.png";
+import ShirtGray from "../t-shirt-iti-gray-red.png";
+import ShirtRed from "../t-shirt-iti-red-gray.png";
+import ShirtWhite from "../t-shirt-iti-white.png";
+import HoddieBlack2 from "../hoddie-iti-black-red-v2.png";
 
 export default function Content() {
     const list = [
     {
-      title: "Fjallraven - Foldsack Backpack",
-      img: "/img/81fPKd-2AYL._AC_SL1500_.jpg",
-      price: "$109.95",
+      title: "Hoddie Negro/Rojo",
+      img: `${HoddieBlack}`,
+      price: "$24.99",
     },
     {
-      title: "Slim Fit T-Shirts",
-      img: "/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-      price: "$22.30",
+      title: "Hoddie Negro/Rojo",
+      img: `${HoddieYellow}`,
+      price: "$24.99",
     },
     {
-      title: "Mens Cotton Jacket",
-      img: "/img/71li-ujtlUL._AC_UX679_.jpg",
-      price: "$55.99",
+      title: "Taza Negro/Rojo",
+      img: `${CupBlack}`,
+      price: "$5.99",
     },
     {
-      title: "Mens Casual Slim Fit",
-      img: "/img/71YXzeOuslL._AC_UY879_.jpg",
-      price: "$15.99",
-    },
-    {
-      title: "John Hardy Women's",
-      img: "/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-      price: "$695.00",
-    },
-    {
-      title: "Solid Gold Petite Micropave",
-      img: "/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-      price: "$168.00",
-    },
-    {
-      title: "White Gold Plated Princess",
-      img: "/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+      title: "Gorra Negro/Rojo",
+      img: `${GapBlack}`,
       price: "$9.99",
     },
     {
-      title: "Pierced Owl Rose",
-      img: "/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-      price: "$10.99",
+      title: "Camiseta Polo Gris",
+      img: `${ShirtGray}`,
+      price: "$12.99",
+    },
+    {
+      title: "Camiseta Polo Roja",
+      img: `${ShirtRed}`,
+      price: "$12.99",
+    },
+    {
+      title: "Camiseta Polo Blanca",
+      img: `${ShirtWhite}`,
+      price: "$12.99",
+    },
+    {
+      title: "Hoddie Capucha Roja",
+      img: `${HoddieBlack2}`,
+      price: "$24.99",
     },
   ];
 
@@ -51,7 +59,7 @@ export default function Content() {
           <Card isPressable>
             <Card.Body css={{ p: 0 }}>
               <Card.Image
-                src={"https://fakestoreapi.com" + item.img}
+                src={item.img}
                 objectFit="contain"
                 width="100%"
                 height={340}
