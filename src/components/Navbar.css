@@ -1,0 +1,141 @@
+/* !--------------- Starts Navbar Styling -------------- */
+.navbar {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    height: 75px;
+    padding: 1rem 2rem;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 1rem 2rem;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.12);
+}
+
+.navbar .max-width {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo-inkua {
+    height: 100%;
+    position: relative;
+    z-index: 30;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    position: relative;
+    display: block;
+    color: var(--black-color-text);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: var(--black-hover-color-text);
+}
+.navbar.sticky .menu li a:hover {
+    color: var(--black-hover-color-text);
+}
+.navbar .menu li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black-hover-color-text);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.navbar .menu li a:hover::before {
+    transform: scaleX(1);
+}
+
+.bars-btn {
+    padding: 10px;
+    color: var(--black-color-text);
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 4.5rem;
+    width: 4.2rem;
+    background: var(--black-color-text);
+    right: 3rem;
+    bottom: 1rem;
+    text-align: center;
+    line-height: 4.5rem;
+    color: #fff;
+    z-index: 9999;
+    font-size: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+    bottom: 3rem;
+    opacity: 1;
+    pointer-events: auto;
+}
+/* !--------------- Finishes Navbar Styling -------------- */
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: var(--white-color);
+        text-align: center;
+        padding-top: 8rem;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    .navbar .menu li a::before {
+        top: 52px;
+    }
+}
