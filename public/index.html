@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/iti-logo-letters-red.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/iti-logo-letters-red.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -25,12 +25,10 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <link rel="shortcut icon" href="img/logos/favicon-rame-blanco.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="(max-width: 847px)" href="css/tablet-847px.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>React App</title>
   </head>
@@ -51,12 +49,12 @@
     <script>
       $(document).ready(function () {
         $(window).scroll(function () {
-          if (this.scrollY > 20) {
+          if (this.scrollY > 0) {
             $('.navbar').addClass("sticky");
           } else {
             $('.navbar').removeClass("sticky");
           }
-          if (this.scrollY > 500) {
+          if (this.scrollY > 150) {
             $('.scroll-up-btn').addClass("show");
           } else {
             $('.scroll-up-btn').removeClass("show");
@@ -72,28 +70,6 @@
         $('.menu-btn').click(function () {
           $('.navbar .menu').toggleClass("active");
           $(".menu-btn i").toggleClass("active");
-        });
-
-        // owl carousel script
-        $('.carousel').owlCarousel({
-          margin: 20,
-          loop: true,
-          autoplayTimeOut: 2000,
-          autoplayHoverPause: true,
-          responsive: {
-            0: {
-              items: 1,
-              nav: false
-            },
-            600: {
-              items: 2,
-              nav: false
-            },
-            1000: {
-              items: 3,
-              nav: false
-            }
-          }
         });
       });
     </script>
