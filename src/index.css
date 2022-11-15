@@ -16,7 +16,7 @@
 /* !-------------------------- SCROLLBAR --------------------------- */
 /* width */
 ::-webkit-scrollbar {
-    width: 0.8rem;
+    width: 1.2rem;
 }
 
 /* Track */
@@ -57,8 +57,8 @@ body {
     width: 100vw;
     /* display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow-x: hidden; */
+    align-items: center;*/
+    overflow-x: hidden; 
 }
 
 .body {

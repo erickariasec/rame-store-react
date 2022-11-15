@@ -60,12 +60,12 @@
 }
 
 .main .cards article .product-content .title p {
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
 .main .cards article .product-content .price h3 {
     font-family: var(--mukta-font);
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 800;
 }
