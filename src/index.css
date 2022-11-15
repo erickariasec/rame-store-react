@@ -1,8 +1,8 @@
 :root {
     /* Text colors */
     --white-color-text: #fff;
-    --black-color-text: #000;
-    --black-hover-color-text: #777;
+    --red-color-text: #AD0840;
+    --red-hover-color-text: #bd7189;
     /* Background colors */
     --promo-header-background-color: #000;
     --logo-content-background-color: rgba(255, 255, 255, 0.973);
@@ -26,13 +26,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #000;
+    background: #a8023a;
     border-radius: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #333;
+    background: #aa214e;
 }
 /* !-------------------------- END SCROLLBAR -------------------------- */
 
