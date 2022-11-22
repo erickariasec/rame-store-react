@@ -1,0 +1,22 @@
+.sign-out {
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white-color-text);
+    background-color: var(--red-color-text);
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 947px) {
+    .sign-out {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
