@@ -1,8 +1,9 @@
 .swiper {
-  margin-top: 90px;
+  margin-top: 10px;
+  margin-bottom: -150px;
   width: 100%;
-  max-width: 1200px;
-  min-width: 240px;
+  max-width: 800px;
+  min-width: 120px;
   height: 500px;
   --swiper-theme-color: #AD0840;
   cursor: pointer;

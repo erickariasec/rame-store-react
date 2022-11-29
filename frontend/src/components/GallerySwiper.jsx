@@ -7,10 +7,12 @@ import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 import HoddieBlackRed from "../hoddie-iti-black-red-no-shadows.png"
-import GapBlackRed from "../gap-iti-black-red.png"
+import GapBlackRed from "../hoddie-iti-yellow-red.png"
 import CupBlackRed from "../cup-iti-black-red.png"
 
-export const GallerySwiper = () => (
+export const GallerySwiper = () => {
+    
+    return (
     <>
         <Swiper
             slidesPerView={1}
@@ -33,4 +35,4 @@ export const GallerySwiper = () => (
         </Swiper>
     </>
     
-);
+)};

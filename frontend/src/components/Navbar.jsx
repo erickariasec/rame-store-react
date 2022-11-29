@@ -17,10 +17,11 @@ export const Navbar = () => {
                     </a>
                     <ul className="menu">
                         <li><a href="http://localhost:3000/" className="menu-btn" aria-label="Go to ITI home page">Home</a></li>
-                        <li><a href="http://localhost:3000/" className="menu-btn" aria-label="Go to ITI men's clothing page">Men</a></li>
-                        <li><a href="http://localhost:3000/" className="menu-btn" aria-label="Go to ITI women's clothing page">Women</a></li>
-                        <li><a href="http://localhost:3000/" className="menu-btn" aria-label="Go to ITI jewelery page">Jewelery</a></li>
-                        <li><a href="http://localhost:3000/" className="menu-btn" aria-label="Go to ITI electronics page">Electronics</a></li>
+                        <li><a href="http://localhost:8800/productsByCategory/" className="menu-btn" aria-label="Go to ITI men's clothing page">Ropa Casual</a></li>
+                        <li><a href="http://localhost:8800/productsByCategory/" className="menu-btn" aria-label="Go to ITI women's clothing page">Ropa Deportiva</a></li>
+                        <li><a href="http://localhost:8800/productsByCategory/" className="menu-btn" aria-label="Go to ITI jewelery page">Salud</a></li>
+                        <li><a href="http://localhost:8800/productsByCategory/" className="menu-btn" aria-label="Go to ITI electronics page">Uniformes</a></li>
+                        <li><a href="http://localhost:8800/productsByCategory/" className="menu-btn" aria-label="Go to ITI electronics page">Calzado</a></li>
                         <li>{ isAuthenticated ? <SignOutButton /> : <SignInButton /> }</li>
                     </ul>
                     <div className="menu-btn bars-btn" aria-label="Press here to see menu button" role="button">

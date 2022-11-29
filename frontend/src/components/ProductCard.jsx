@@ -14,7 +14,7 @@ export const ProductCard = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get("https://fakestoreapi.com/products")
+        axios.get("http://localhost:8800/products")
             .then((res) => setData(res.data))
             .catch((e) => console.error(e))
             .finally(() => setLoading(false));
@@ -30,7 +30,7 @@ export const ProductCard = () => {
                         </section>
                         <section className="product-content">
                             <div className="title">
-                                <p>{product.title}</p>
+                                <p>{product.name}</p>
                             </div>
                             <div className="price">
                                 <h3>{formatter.format(`${product.price}`)}</h3>
