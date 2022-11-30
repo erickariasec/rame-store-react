@@ -40,7 +40,7 @@ app.get("/products/:id", (req, res) => {
 
 app.get("/productsByCategory/:id", (req, res) => {
     const categoryId = req.params.id;
-    const q = "SELECT * from products where id_category = ?";
+    const q = "SELECT * from products where id_category = ? and id < 34";
 
     connection.query(q, [categoryId], function(error, results, fields){
         if (error) return res.json(error);
@@ -49,7 +49,7 @@ app.get("/productsByCategory/:id", (req, res) => {
 })
 
 app.get("/carrusel", (req, res) => {
-    const q = "SELECT * from products ORDER BY rand() LIMIT 5";
+    const q = "SELECT image from products where id < 34 ORDER BY rand() LIMIT 5";
 
     connection.query(q, function(error, results, fields){
         if (error) return res.json(error);
